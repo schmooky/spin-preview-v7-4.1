@@ -5,11 +5,7 @@ import mdPlugin, { Mode } from 'vite-plugin-markdown';
 export default defineConfig(async ({ mode }) => {
   return {
     publicDir: "assets",
-    base: "/spine-preview-v7/"  ,
-    server: {
-      port: 8080,
-      basePath: "spine-preview-v7/"
-    },
+    base: "/"  ,
 
     plugins: [mdPlugin({mode: Mode.HTML as any})],
     build: {
