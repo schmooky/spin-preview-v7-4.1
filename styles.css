@@ -1,0 +1,119 @@
+/* latin */
+@font-face {
+  font-family: 'Fira Code';
+  font-style: normal;
+  font-weight: 300 700;
+  font-display: swap;
+  src: url('/fonts/fira.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+html {
+  background-color: #282b30;
+}
+
+h2 {
+  justify-self: center;
+  display: inline-block;
+  align-self: center;
+  margin-bottom: 4px;
+}
+
+.tableContainer {
+  display: flex;
+}
+
+section {
+  display: flex;
+  flex-flow: column;
+  max-width: 800px;
+}
+
+body {
+  display: flex;
+  flex-flow: column;  
+  align-items: center;
+  color: #ccc;
+}
+
+.bone-tree {
+  align-self: center;
+}
+
+#pixiContainer {
+  width: calc(100vw - 200px); /* -200px is for the sidebar */
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  overflow: hidden;
+  z-index: 900;
+}
+
+* {
+  font-family: "Fira Code", monospace;
+  font-optical-sizing: auto;
+}
+
+#dropArea {
+  width: calc(100vw - 200px); /* -200px is for the sidebar */
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  overflow: hidden;
+  z-index: 1000;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  font-weight: bold;
+  line-height: 100vh;
+}
+#dropArea.highlight {
+  border-color: #000;
+}
+
+p {
+  margin-top: 4px;
+}
+
+summary {
+  font-weight: bold;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100vh;
+  background-color: #282b30;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  z-index: 1100;
+  border-right: #ccc solid 2px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.sidebar-item {
+  margin-bottom: 10px;
+}
+
+.sidebar section {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+#canvasScale {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1300;
+  text-align: center;
+}
